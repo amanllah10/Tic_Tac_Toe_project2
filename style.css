@@ -1,89 +1,56 @@
-/* Whole page styling */
+/* Full page styling */
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
-/* whole calculater styling */
-.calculater_wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Tic Tac Wrapper styling */
+.tic_tac_wrapper{
     height: 100vh;
     width: 100%;
-}
-/* calculater_screen styling */
-.calculater_screen{
-    border: 1px solid black;
-    border-radius: 20px;
-}
-
-/* apply display grid */
-.grid_buttons{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
-    margin: 15px;
-    padding: 10px;
-}
-
-/* whole buttons styling */
-button{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-/* displayh1 styling */
-.text_align{
-    margin-left: 10px;
-}
-
-/* apply colors and bgcolors on some buttons */
-.bluebg{
-    background-color: var(--bgblue);
-    color: white;
-}
-.yellowbg{
-    background-color: var(--bgyellow);
-}
-
-/* calculater display styling */
-.calculater_display_part{
     display: flex;
-    border-bottom: 2px solid black;
-}
-/* img styling */
-.img{
-    width: 30px;
-    height: 30px;
-}
-
-/* last button button16 styling */
-.textwhite{
-    background-color: white;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-/* modes styling */
-.modes{
-    position: absolute;
-    top: 50px;
+
+/* tic tac screen styling */
+.tic_tac_screen{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 40px;
 }
 
-/* variables for colors */
-:root{
-    --bgcolor : white;
-    --bgblue:blue;
-    --bgyellow:yellow
+/* all buttons styling */
+button{
+    font-weight: bold;
+    color: blue;
+    font-size: 70px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
 }
 
-/* media query on Mode buttons */
-@media(max-width:500px){
-    .light_mode{
-        margin:5px;
+/* result */
+.result{
+    font-size: 50px;
+    text-align: center;
+}
+
+/* Media Query Styling */
+@media(max-width:600px){
+    button{
+        font-size: 40px;
+        padding: 6px;
+        width: 70px;
+        height: 70px;
+
     }
-    .dark_mode{
-        margin: 5px;
+    .tic_tac_screen{
+        grid-gap: 15px;
+        padding: 20px;
     }
 }
