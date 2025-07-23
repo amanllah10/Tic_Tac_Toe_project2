@@ -78,7 +78,7 @@ const winner = () => {
 }
 
 resetBtn.addEventListener(()=>{
-    gridButtons.forEach(btns) =>{
+    gridButtons.forEach((btns)=>{
         btns.innerHTML = ''
-    }
+    })
 })
