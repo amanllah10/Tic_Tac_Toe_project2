@@ -77,7 +77,7 @@ const winner = () => {
 
 }
 
-resetBtn.addEventListener(()=>{
+resetBtn.addEventListener('click',()=>{
     gridButtons.forEach((btns)=>{
         btns.innerHTML = ''
     })
