@@ -79,9 +79,9 @@ const winner = () => {
 
 resetBtn.addEventListener('click',()=>{
         result.innerHTML = '';
-    gridButtons.forEach((btns)=>{
-        btns.innerHTML = '';
         currentPlayer = firstPlayer;
         gameOver = false;
+    gridButtons.forEach((btns)=>{
+        btns.innerHTML = '';
     })
 })
