@@ -82,5 +82,6 @@ resetBtn.addEventListener('click',()=>{
         btns.innerHTML = '';
         currentPlayer = firstPlayer;
         gameOver = false;
+        result.innerHTML = '';
     })
 })
