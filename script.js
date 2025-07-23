@@ -9,6 +9,7 @@ let gridKey7 = document.querySelector('#grid_key7')
 let gridKey8 = document.querySelector('#grid_key8')
 let gridKey9 = document.querySelector('#grid_key9')
 let result = document.querySelector('.result')
+let resetBtn = document.querySelector('.reset-button')
 let firstPlayer = 'o';
 let secondPlayer = 'x';
 let currentPlayer = firstPlayer;
@@ -76,3 +77,8 @@ const winner = () => {
 
 }
 
+resetBtn.addEventListener(()=>{
+    gridButtons.forEach(btns) =>{
+        btns.innerHTML = ''
+    }
+})
