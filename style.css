@@ -41,8 +41,13 @@ button{
 }
 
 .reset-button{
-    border:1px solid black;
-    border-radius:20px
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    width: auto;
+    margin: 15px;
+    height: auto;
 }
 
 /* Media Query Styling */
